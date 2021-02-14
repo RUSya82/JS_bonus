@@ -84,7 +84,7 @@ function del(element) {
 function getTimeString(){
     let year = ["Января","Февраля","Марта","Апреля","Мая","Июня","Июля","Августа","Сентября","Октября","Ноября","Декабря"];
     let date = new Date();
-    return `${date.getDate()} ${year[date.getMonth()]} ${date.getFullYear()}г, ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+    return `${addZero(date.getDate())} ${addZero(year[date.getMonth()])} ${date.getFullYear()}г, ${addZero(date.getHours())}:${addZero(date.getMinutes())}:${addZero(date.getSeconds())}`;
 }
 
 /**
@@ -123,4 +123,7 @@ function getStringFromUser(message, defaultValue) {
  */
 function isNumber(number) {
     return !isNaN(parseFloat(number)) && isFinite(number);
+}
+function addZero(number) {
+    return number > 9 ? number : '0' + number;
 }
