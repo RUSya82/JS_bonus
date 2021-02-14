@@ -34,6 +34,8 @@ authBtn.addEventListener('click', function (e) {
     if(user && user.password === userPassword){
         console.log(headerSpan);
         headerSpan.textContent = user.name;
+    }else{
+        alert('Пользователь не найден!');
     }
 });
 function init() {
