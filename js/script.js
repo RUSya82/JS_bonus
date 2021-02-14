@@ -84,7 +84,7 @@ function del(element) {
 function getTimeString(){
     let year = ["Января","Февраля","Марта","Апреля","Мая","Июня","Июля","Августа","Сентября","Октября","Ноября","Декабря"];
     let date = new Date();
-    return `${addZero(date.getDate())} ${addZero(year[date.getMonth()])} ${date.getFullYear()}г, ${addZero(date.getHours())}:${addZero(date.getMinutes())}:${addZero(date.getSeconds())}`;
+    return `${addZero(date.getDate())} ${year[date.getMonth()]} ${date.getFullYear()}г, ${addZero(date.getHours())}:${addZero(date.getMinutes())}:${addZero(date.getSeconds())}`;
 }
 
 /**
