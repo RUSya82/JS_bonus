@@ -1,0 +1,38 @@
+button{
+    outline: none;
+    cursor: pointer;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons{
+    max-width: 767px;
+    margin: 30px 0;
+}
+.userlist{
+    min-width: 100%;
+    font-size: 18px;
+    font-family: Arial sans-serif;
+}
+.buttons button{
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #23afc2;
+}
+.user-item{
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #3e3434;
+}
+.user-item button{
+    border-radius: 10px;
+    background-color: #23afc2;
+    padding: 0 10px;
+}
